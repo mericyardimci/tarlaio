@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tarla.io</title>
+</head>
+<link type="text/css" rel=stylesheet href="index.css"/>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.js"></script>
+<script src="pieChart.js"></script>
+
+<body>
+    <div class =title>
+        <tl>
+            tarla.io
+        </tl>
+    </div>
+        <div class = map>
+            <allTl>   <br/>  User Locations  <br/>
+            </allTl>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.131259185818!2d-2.274918983978157!3d53.35880578147879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a52c0dfd893c5%3A0x8b0b8247e5e4a5e0!2sManchester+Airport!5e0!3m2!1str!2str!4v1540318784486"
+                    style="border:0"     frameborder="0" ></iframe>
+        </div>
+        <div class= pieChart>
+            <allTl> <br/> Posts Percentage <br/> </allTl>
+        </div>
+        <div class= userTable>
+            <allTl>
+                <br/> User Table <br/>
+            </allTl>
+            <table id="userTableSelect"
+                   data-toggle="table"
+                   data-height="30%"
+                   data-url="https://jsonplaceholder.typicode.com/users"
+                   data-pagination="true"
+                   data-toolbar="#toolbar">
+            <thead>
+                <tr>
+                    <th data-field="state" data-checkbox="true"></th>
+                    <th data-field="id">id</th>
+                    <th data-field="username">username</th>
+                    <th data-field="name">name</th>
+                    <th data-field="email">email</th>
+                    <th data-field="phone">phone</th>
+                    <th data-field="website">website</th>
+                    <th data-field=company>company</th>
+                    <th data-field=address>address</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+</body>
+</html>

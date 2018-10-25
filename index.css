@@ -1,0 +1,63 @@
+body{
+    background-color: darkgrey;
+}
+.title{
+    align-content: center;
+    background-color: black;
+    margin-top: 5%;
+    text-align: center;
+}
+.map{
+    margin-top: 5%;
+    margin-right: 60%;
+    margin-left: 10%;
+    padding-bottom: 8%;
+    background-color: white;
+    text-align: center;
+    width: 30%;
+    height: 10%;
+    float: left;
+}
+tl {
+    background-color: black;
+    color: white;
+    font-size: 200%;
+    font-family: Calibri, serif;
+}
+allTl {
+    font-size: 130%;
+    font-family: Calibri, serif;
+}
+iframe{
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 60%;
+    width: 70%;
+}
+.pieChart{
+    margin-top: -20%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-bottom: 8%;
+    background-color: white;
+    text-align: center;
+    width: 48%;
+    height: 10%;
+    float: right;
+}
+.userTable{
+    background-color: white;
+    margin-top: 38%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+.userTableSelect {
+    font-family: Calibri, serif;
+}
+tr{
+    font-family: Calibri, serif;
+    font-size: 80%;
+}
+
