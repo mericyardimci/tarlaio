@@ -1,13 +1,13 @@
 body{
     background-color: darkgrey;
 }
-.title{
+.titleArea{
     align-content: center;
     background-color: black;
     margin-top: 5%;
     text-align: center;
 }
-.map{
+.mapArea{
     margin-top: 5%;
     margin-right: 60%;
     margin-left: 10%;
@@ -22,11 +22,11 @@ tl {
     background-color: black;
     color: white;
     font-size: 200%;
-    font-family: Calibri, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 allTl {
     font-size: 130%;
-    font-family: Calibri, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 iframe{
     margin-top: 10%;
@@ -35,7 +35,7 @@ iframe{
     height: 60%;
     width: 70%;
 }
-.pieChart{
+.pieChartArea{
     margin-top: -20%;
     margin-right: 10%;
     margin-left: 10%;
@@ -46,7 +46,7 @@ iframe{
     height: 10%;
     float: right;
 }
-.userTable{
+.userTableArea{
     background-color: white;
     margin-top: 38%;
     margin-left: 10%;
@@ -54,10 +54,21 @@ iframe{
     text-align: center;
 }
 .userTableSelect {
-    font-family: Calibri, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 tr{
-    font-family: Calibri, serif;
-    font-size: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: honeydew;
+}
+
+th, td {
+    padding: 0.5%;
+    border: 1px solid #ddd;
+    text-align: center;
+}
