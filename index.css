@@ -1,5 +1,15 @@
 body{
     background-color: darkgrey;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px
+}
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px
 }
 .titleArea{
     align-content: center;
@@ -14,8 +24,8 @@ body{
     padding-bottom: 8%;
     background-color: white;
     text-align: center;
-    width: 30%;
-    height: 10%;
+    width: 35%;
+    height: 45%;
     float: left;
 }
 tl {
@@ -36,16 +46,16 @@ iframe{
     width: 70%;
 }
 .pieChartArea{
-    margin-top: -20%;
+    margin-top: -29.9%;
     margin-right: 10%;
-    margin-left: 10%;
-    padding-bottom: 8%;
+    margin-left: 75%;
     background-color: white;
     text-align: center;
-    width: 48%;
-    height: 10%;
+    width: 42%;
+    height: 53.8%;
     float: right;
 }
+
 .userTableArea{
     background-color: white;
     margin-top: 38%;
@@ -65,6 +75,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     background-color: honeydew;
+    margin-bottom: 10%;
 }
 
 th, td {

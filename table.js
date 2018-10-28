@@ -108,3 +108,60 @@ function selectAllCheckboxes(source){
         checkboxes[i].checked = source.checked;
     }
 }
+
+function countPosts() {
+    fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(response => response.json())
+        .then(json => {
+
+            var countDict = 0;
+            var uniqueUserId = [];
+
+            const postId = json.map(x => x.id);
+            const userId = json.map(x => x.userId);
+
+            for(let i = 0;i < userId.length; i++){
+                if(uniqueUserId.indexOf(userId[i]) == -1){
+                    uniqueUserId.push(userId[i])
+                }
+            }
+
+            while (countDict < uniqueUserId.length){
+
+            }
+            document.getElementById("mrc3").innerHTML = uniqueUserId;
+            document.getElementById("mrc").innerHTML = postId;
+            document.getElementById("mrc2").innerHTML = userId;
+            document.getElementById("mrc4").innerHTML = usersPostDict;
+
+
+        });
+}
+
+countPosts();
+
+
+
+
+
+
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+
+    var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Work',     15],
+        ['Eat',      2],
+        ['Commute',  2],
+        ['Watch TV', 2],
+        ['Sleep',    7]
+    ]);
+
+    var options = {};
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    chart.draw(data, options);
+}
+
+
